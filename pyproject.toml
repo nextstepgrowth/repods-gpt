@@ -6,7 +6,7 @@ authors = [
     {name = "jimin52",email = "jimin42.dev@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.13, <4.0"
+requires-python = ">=3.12, <4.0"
 dependencies = [
     "streamlit (>=1.43.0,<2.0.0)",
     "langchain-openai (>=0.3.8,<0.4.0)",

@@ -17,21 +17,21 @@ with st.container(height=750, border=False):
     img_files = st.file_uploader('File uploader', accept_multiple_files=True, type=['jpg', 'png', 'jpeg'])
     col1, col2, col3 = st.columns(3)
     with col1:
-        if len(img_files) == 1:
+        if len(img_files) > 0:
             st.image(img_files[0], caption='Uploaded image', use_container_width=True)
             img_datas.append(base64.b64encode(img_files[0].read()).decode('utf-8'))
         else:
             st.container(height=200)
 
     with col2:
-        if len(img_files) == 2:
+        if len(img_files) > 1:
             st.image(img_files[1], caption='Uploaded image', use_container_width=True)
             img_datas.append(base64.b64encode(img_files[1].read()).decode('utf-8'))
         else:
             st.container(height=200)
 
     with col3:
-        if len(img_files) == 3:
+        if len(img_files) > 2:
             st.image(img_files[2], caption='Uploaded image', use_container_width=True)
             img_datas.append(base64.b64encode(img_files[2].read()).decode('utf-8'))
         else:

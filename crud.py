@@ -14,8 +14,10 @@ def upload_prompts():
     svc.upload_file('./prompts/prompt-page1.txt', 'repods-gpt','prompts/prompt-page1.txt')
     svc.upload_file('./prompts/prompt-page2.txt', 'repods-gpt','prompts/prompt-page2.txt')
     svc.upload_file('./prompts/prompt-page3.txt', 'repods-gpt','prompts/prompt-page3.txt')
+    svc.upload_file('./prompts/prompt-page4.txt', 'repods-gpt','prompts/prompt-page4.txt')
 
 def download_prompts():
     svc.download_file('repods-gpt', 'prompts/prompt-page1.txt', 'prompts/prompt-page1.txt')
     svc.download_file('repods-gpt', 'prompts/prompt-page2.txt', 'prompts/prompt-page2.txt')
     svc.download_file('repods-gpt', 'prompts/prompt-page3.txt', 'prompts/prompt-page3.txt')
+    svc.download_file('repods-gpt', 'prompts/prompt-page4.txt', 'prompts/prompt-page4.txt')

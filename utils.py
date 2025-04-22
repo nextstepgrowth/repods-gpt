@@ -16,11 +16,12 @@ def set_sidebar():
         st.page_link('pages/1_page1.py', label='Page 1')
         st.page_link('pages/2_page2.py', label='Page 2')
         st.page_link('pages/3_page3.py', label='Page 3')
-        st.page_link('pages/4_admin.py', label='Admin')
+        st.page_link('pages/4_page4.py', label='Page 4')
+        st.page_link('pages/5_admin.py', label='Admin')
 
 def get_prompts():
     prompts = []
-    for i in range(1, 4):
+    for i in range(1, 5):
         with open(f'prompts/prompt-page{i}.txt', 'r') as f:
             prompt = f.read()
             prompts.append(prompt)

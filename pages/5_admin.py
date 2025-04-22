@@ -7,7 +7,7 @@ from crud import upload_prompts
 set_sidebar()
 
 prompts = get_prompts()
-options = ['page1', 'page2', 'page3']
+options = ['page1', 'page2', 'page3', 'page4']
 
 option = st.selectbox('Select option', options)
 if option == 'page1':
@@ -16,6 +16,8 @@ elif option == 'page2':
     st.session_state['text_area'] = st.text_area('Prompt', height=100, value=prompts[1])
 elif option == 'page3':
     st.session_state['text_area'] = st.text_area('Prompt', height=100, value=prompts[2])
+elif option == 'page4':
+    st.session_state['text_area'] = st.text_area('Prompt', height=100, value=prompts[3])
 
 
 if st.button("저장"):

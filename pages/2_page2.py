@@ -40,5 +40,5 @@ with st.container(height=750, border=False):
             content.append({'type': 'image_url', 'image_url': {'url': f'data:{img_files[i].type};base64,{img_datas[i]}'}})
 
         response = get_chat_response([HumanMessage(content=content)])
-    st.text_area('결과', value=response, height=100, disabled=True)
+    st.text_area('결과', value=response, height=300, disabled=True)
 

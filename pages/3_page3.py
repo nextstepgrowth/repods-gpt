@@ -22,5 +22,5 @@ with st.container(height=750, border=False):
         content.append({'type': 'text', 'text': input_text})
         response = get_chat_response([HumanMessage(content=content)])
 
-    st.text_area('결과', value=response, height=100, disabled=True)
+    st.text_area('결과', value=response, height=300, disabled=True)
 

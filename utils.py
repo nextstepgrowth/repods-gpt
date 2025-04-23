@@ -18,7 +18,7 @@ def set_sidebar():
         st.page_link('pages/2_page2.py', label='케이스 상태 검수')
         st.page_link('pages/3_page3.py', label='레이블 정확도 검수')
         st.page_link('pages/4_page4.py', label='공정 파라미터 검수')
-        st.page_link('pages/5_admin.py', label='Admin')
+        # st.page_link('pages/5_admin.py', label='Admin')
 
 def get_prompts():
     prompts = []

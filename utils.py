@@ -12,11 +12,12 @@ def get_chat_response(input):
 
 def set_sidebar():
     with st.sidebar:
-        st.title('사이드바')
-        st.page_link('pages/1_page1.py', label='Page 1')
-        st.page_link('pages/2_page2.py', label='Page 2')
-        st.page_link('pages/3_page3.py', label='Page 3')
-        st.page_link('pages/4_page4.py', label='Page 4')
+        st.title('Page')
+        st.logo(image='logo.svg', size='medium')
+        st.page_link('pages/1_page1.py', label='배터리, 칩셋 검수')
+        st.page_link('pages/2_page2.py', label='케이스 상태 검수')
+        st.page_link('pages/3_page3.py', label='레이블 정확도 검수')
+        st.page_link('pages/4_page4.py', label='공정 파라미터 검수')
         st.page_link('pages/5_admin.py', label='Admin')
 
 def get_prompts():

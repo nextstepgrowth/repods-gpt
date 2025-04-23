@@ -6,9 +6,19 @@ from crud import download_prompts
 
 load_dotenv()
 
+st.set_page_config(
+    page_title='Repods AI',
+    layout='wide',
+    initial_sidebar_state='expanded'
+)
+
 download_prompts()
 
 prompts = get_prompts()
 
+st.title("Repods AI")
 
-st.switch_page('pages/1_page1.py')
+
+set_sidebar()
+
+# st.switch_page('pages/1_page1.py')

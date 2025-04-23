@@ -5,7 +5,6 @@ import streamlit as st
 import base64
 
 from utils import get_chat_response, get_prompts, set_sidebar
-
 set_sidebar()
 
 img_files = []

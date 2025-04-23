@@ -13,7 +13,7 @@ def get_chat_response(input):
 def set_sidebar():
     with st.sidebar:
         st.title('Page')
-        st.logo(image='logo.svg', size='medium')
+        st.logo(image='logo.svg', size='medium', link='https://repods-gpt.streamlit.app/')
         st.page_link('pages/1_page1.py', label='배터리, 칩셋 검수')
         st.page_link('pages/2_page2.py', label='케이스 상태 검수')
         st.page_link('pages/3_page3.py', label='레이블 정확도 검수')

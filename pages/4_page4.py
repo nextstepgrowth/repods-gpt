@@ -11,7 +11,7 @@ img_datas = []
 response = ''
 prompts = get_prompts()
 
-with st.container(height=750, border=False): 
+with st.container(height=1500, border=False): 
     st.container(height=300, border=False)
     
     input_text = st.text_area('Enter text here')
@@ -23,5 +23,5 @@ with st.container(height=750, border=False):
         content.append({'type': 'text', 'text': input_text})
         response = get_chat_response([HumanMessage(content=content)])
 
-    st.text_area('결과', value=response, height=500, disabled=True)
+    st.text_area('결과', value=response, height=600, disabled=True)
 

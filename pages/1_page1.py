@@ -12,7 +12,7 @@ img_datas = []
 response = ''
 prompts = get_prompts()
 
-with st.container(height=750, border=False): 
+with st.container(height=1500, border=False): 
     img_files = st.file_uploader('File uploader', accept_multiple_files=True, type=['jpg', 'png', 'jpeg'])
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -45,4 +45,4 @@ with st.container(height=750, border=False):
         response = get_chat_response([HumanMessage(content=content)])
 
     
-    st.text_area('결과', value=response, height=500, disabled=True)
+    st.text_area('결과', value=response, height=600, disabled=True)

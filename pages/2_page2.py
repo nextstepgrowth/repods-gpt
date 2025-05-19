@@ -10,7 +10,7 @@ img_datas = []
 response = ''
 prompts = get_prompts()
 
-with st.container(height=750, border=False): 
+with st.container(height=1500, border=False): 
 
     img_files = st.file_uploader('Upload image files', type=['jpg', 'jpeg', 'png'], accept_multiple_files=True)
 
@@ -40,5 +40,5 @@ with st.container(height=750, border=False):
             content.append({'type': 'image_url', 'image_url': {'url': f'data:{img_files[i].type};base64,{img_datas[i]}'}})
 
         response = get_chat_response([HumanMessage(content=content)])
-    st.text_area('결과', value=response, height=500, disabled=True)
+    st.text_area('결과', value=response, height=600, disabled=True)
 

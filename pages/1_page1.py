@@ -45,4 +45,4 @@ with st.container(height=750, border=False):
         response = get_chat_response([HumanMessage(content=content)])
 
     
-    st.text_area('결과', value=response, height=300, disabled=True)
+    st.text_area('결과', value=response, height=500, disabled=True)
